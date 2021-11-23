@@ -1,5 +1,5 @@
 ---
- - hosts: pagarme
+ - hosts: all
    become: yes
    roles:
     - deploy_application
