@@ -27,7 +27,7 @@ terraform destroy
 cd ansible/roles/deploy_application/templates
 
 # Agora basta rodar a aplicação (no caso ele irá buildar a imagem e iniciar o container)
-```
+
 docker-compose run --service-ports -d app 
 ```
 
