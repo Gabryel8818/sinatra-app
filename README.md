@@ -12,6 +12,8 @@ terraform apply
 cd ansible
 ansible-playbook playbook.yml -i hosts
 ```
+agora basta acessar o IP que o endpoint do terraform liberou em seu terminal acrescentando a porta 3000
+exemplo: 189.0.0.1:3000
 
 3. Para destruir o ambiente basta rodar o comando abaixo:
 
@@ -19,7 +21,15 @@ ansible-playbook playbook.yml -i hosts
 terraform destroy
 ```
 
+## Caso deseje rodar localmente a aplicação basta rodar os comando abaixo
+```
+# Entre no diretório
+cd ansible/roles/deploy_application/templates
 
+# Agora basta rodar a aplicação (no caso ele irá buildar a imagem e iniciar o container)
+```
+docker-compose run --service-ports -d app 
+```
 
 
 # Referências de instalação
