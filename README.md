@@ -10,9 +10,10 @@ terraform apply
 
 2. Logo você precisa provisionar o ambiente, e buildar a imagem, para isto iremos utilizar o nosso grande amigo Ansible que irá atuar em conjunto com o docker-compose, ele que será o responsável por garantir a configuração do ambiente com sua idempotência
 
+> Lembre-se de alterar o IP e o caminho da chave Privada SSH no arquivo hosts.yml
 ```
 cd ansible
-ansible-playbook playbook.yml -i hosts
+ansible-playbook playbook.yml -i hosts.yml
 ```
 agora basta acessar o IP que o endpoint do terraform liberou em seu terminal acrescentando a porta 3000
 exemplo: 10.0.0.1:3000
