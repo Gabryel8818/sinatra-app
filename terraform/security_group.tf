@@ -1,4 +1,7 @@
 resource "aws_security_group" "main" {
+  tags = {
+    Name = "my-sg-pagarme"
+  }
   egress = [
     {
       cidr_blocks      = [ "0.0.0.0/0", ]

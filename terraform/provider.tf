@@ -9,4 +9,11 @@ terraform {
 
 provider "aws" {
   region = "us-east-2"
+   default_tags {
+     tags = {
+       Environment = "Pagarme"     
+       Owner       = "SinatraAPagarme"
+       Project     = "Desafio"  
+     } 
+   }
 }
