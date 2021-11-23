@@ -30,7 +30,8 @@ ansible-playbook -i aws_ec2.yml playbook.yml
 ```
 agora basta acessar o IP que o endpoint do terraform liberou em seu terminal acrescentando a porta 3000 no seu navegador
 exemplo: 10.0.0.1:3000
-ou o endpoint que o ansible irá gerar este é um exemplo? http://exemplo.us-east-2.compute.amazonaws.com:3000/
+
+ou o endpoint que o ansible irá gerar este é um exemplo: http://exemplo.us-east-2.compute.amazonaws.com:3000/
 
 3. Para destruir o ambiente basta rodar o comando abaixo:
 
