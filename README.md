@@ -13,6 +13,12 @@ cd ansible
 ansible-playbook playbook.yml -i hosts
 ```
 
+3. Para destruir o ambiente basta rodar o comando abaixo:
+
+```
+terraform destroy
+
+```
 
 
 
