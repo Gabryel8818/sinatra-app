@@ -19,5 +19,7 @@ ansible-playbook playbook.yml -i hosts
 
 # Referências de instalação
 > https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
+
 > https://docs.docker.com/compose/reference/run/
+
 > https://www.terraform.io/downloads.html
