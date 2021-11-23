@@ -51,6 +51,11 @@ docker-compose run --service-ports -d app
 Basta acessar no seu navegador a aplicação: 127.0.0.1:3000
 
 
+# Dependencias
+|------|
+| Terraform |
+| Ansible   |
+
 # Notas
 
 > Seu usuário do terraform precisa ter permissão no IAM para buscar máquinas ec2 
