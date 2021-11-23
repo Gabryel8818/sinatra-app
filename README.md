@@ -15,7 +15,7 @@ terraform apply
 cd ansible
 ansible-playbook playbook.yml -i hosts.yml
 ```
-agora basta acessar o IP que o endpoint do terraform liberou em seu terminal acrescentando a porta 3000
+agora basta acessar o IP que o endpoint do terraform liberou em seu terminal acrescentando a porta 3000 no seu navegador
 exemplo: 10.0.0.1:3000
 
 3. Para destruir o ambiente basta rodar o comando abaixo:
