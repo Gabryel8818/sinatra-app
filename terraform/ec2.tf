@@ -12,7 +12,7 @@ resource "aws_instance" "pagarme_app" {
 
 resource "aws_key_pair" "ssh-key" {
   key_name            = "ssh-key"
-  public_key          = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABg.........." # Adicione uma chave pública :D
+  public_key          = var.ssh-key
   tags = {
     Name = "ssh-key-pair-pagarme"
   }
