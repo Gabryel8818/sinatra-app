@@ -1,0 +1,6 @@
+---
+- name: "Import task install dependencies"
+  import_tasks: install_dependencies.yml
+
+- name: "Import task deploy app"
+  import_tasks: deploy_application.yml

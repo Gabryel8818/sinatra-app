@@ -1,0 +1,20 @@
+---
+
+- name: "Copy files"
+  template:
+     src: "{{ item  }}"
+     dest: "/opt/{{ item }}"
+  with_items:
+     - "{{ files  }}"
+
+
+- name: "Docker build"
+  command:
+     cmd: "docker-compose build"
+     chdir: /opt
+
+
+- name: "Docker compose run"
+  command:
+     cmd: "docker-compose run --service-ports -d app"
+     chdir: /opt

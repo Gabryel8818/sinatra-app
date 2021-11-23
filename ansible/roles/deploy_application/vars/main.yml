@@ -1,0 +1,17 @@
+packages_depends:
+   - ca-certificates
+   - curl
+   - gnupg
+   - lsb-release
+
+packages:
+   - docker-ce
+   - docker-ce-cli
+   - containerd.io
+   - docker-compose 
+
+
+files:
+   - server.rb
+   - Dockerfile
+   - docker-compose.yml

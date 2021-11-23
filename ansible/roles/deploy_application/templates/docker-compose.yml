@@ -1,0 +1,14 @@
+version: '3.2'
+
+services:
+  app:
+    container_name: pagarme_app
+    build: .
+    hostname: app
+    ports: 
+     - "3000:3000"
+     - "8080:3000"
+    volumes:
+     - type: "bind"
+       source: .
+       target: /app
