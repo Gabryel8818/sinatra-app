@@ -17,7 +17,6 @@ ansible-playbook playbook.yml -i hosts
 
 ```
 terraform destroy
-
 ```
 
 
