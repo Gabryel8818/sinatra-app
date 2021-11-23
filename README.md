@@ -2,11 +2,13 @@
 # Como Utilizar
 1. Primeiro é preciso criar a infraestrutura na aws é um simples ec2 e um SG liberando a porta da aplicação :)
 
+> Lembre-se de adicionar sua chave pública no ./terraform/vars.tf
+
 ```
 cd terraform
 terraform apply
 ```
-> Lembre-se de adicionar sua chave pública no ./terraform/vars.tf
+
 
 2. É preciso instalar as depedências, por se tratar de uma ferramenta em python é preciso ter o python3 e o pip3 instalado, para tal vamos usar os comandos abaixo já entendendo que o python3 esta instalado em sua máquina
 
